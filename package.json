@@ -19,10 +19,14 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.0",
+    "typeface-share-tech-mono": "^1.1.13"
   },
   "devDependencies": {
-    "prettier": "2.1.2"
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.4",
+    "prettier": "^2.1.2"
   },
   "keywords": [
     "gatsby"

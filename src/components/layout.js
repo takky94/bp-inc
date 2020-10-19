@@ -7,7 +7,7 @@ import Header from "./Header"
 import theme from "../styles/theme"
 import GlobalStyle from "../styles/global"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header siteTitle={data.site.siteMetadata.title} location={location} />
         <main>{children}</main>
         <footer style={{
           marginTop: `2rem`

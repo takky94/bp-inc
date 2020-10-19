@@ -6,7 +6,7 @@ import Image from "../components/Image"
 import SEO from "../components/SEO"
 
 const IndexPage = (props) => (
-  <Layout>
+  <Layout location={props.location}>
     <SEO location={props.location} />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>

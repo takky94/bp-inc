@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     lang: "ja",
     siteUrl: "localhost:8000",
-    title: "BP Inc",
+    title: "BP Inc.",
     description: "東京に本社を構えるビジネスパートナーズの公式ホームページです。",
     author: "@gatsbyjs",
   },

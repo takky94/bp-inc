@@ -1,29 +1,31 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+h1, h2, h3, h4, h5, p{
+  line-height: 1.5;
+}
+a{
+  color: #3366ff;
+  text-decoration: none;
+}
+@media(max-width: 479px){
+  .sp__none{
+    display: none !important;
   }
-  h1, h2, h3, h4, h5, p{
-    line-height: 1.5;
+}
+@media(min-width: 480px){
+  .pc__none{
+    display: none !important;
   }
-  @media(max-width: 479px){
-    .sp__none{
-      display: none;
-    }
-  }
-  @media(max-width: 979px){
-    .tab__none{
-      display: none;
-    }
-  }
-  @media (min-width: 980px){
-    .pc__none{
-      display: none;
-    }
-  }
-`
+}
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
