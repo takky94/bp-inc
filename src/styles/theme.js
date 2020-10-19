@@ -6,8 +6,8 @@ const variables = {
     xl: '1200px',
   },
   headerHeight: {
-    s: '400px',
-    m: '500px',
+    s: '300px',
+    m: '400px',
   },
   container: {
     header: '1200px',
