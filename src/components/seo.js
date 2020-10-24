@@ -1,6 +1,6 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
 
 function SEO({ pageTitle, pageDescription, location }) {
   const { site } = useStaticQuery(graphql`
@@ -14,14 +14,14 @@ function SEO({ pageTitle, pageDescription, location }) {
         }
       }
     }
-  `)
+  `);
 
-  const path = location.pathname
+  const path = location.pathname;
 
-  const { lang, title, siteUrl, description } = site.siteMetadata
-  const metaTitle = path === "/" ? title : pageTitle + " | " + title
-  const metaUrl = siteUrl + path
-  const metaDescription = pageDescription || description
+  const { lang, title, siteUrl, description } = site.siteMetadata;
+  const metaTitle = path === '/' ? title : pageTitle + ' | ' + title;
+  const metaUrl = siteUrl + path;
+  const metaDescription = pageDescription || description;
 
   return (
     <Helmet>
@@ -38,7 +38,7 @@ function SEO({ pageTitle, pageDescription, location }) {
       <meta property="og:locale" content="ja_JP" />
       <link rel="canonical" href={metaUrl} />
     </Helmet>
-  )
+  );
 }
 
-export default SEO
+export default SEO;

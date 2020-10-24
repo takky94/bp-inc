@@ -5,21 +5,25 @@ import 'typeface-share-tech-mono';
 // import Image from '../Image';
 
 const container = (props) => props.theme.container.main;
-const gapXs = (props) => props.theme.gap.xs;
+const mediaS = (props) => props.theme.media.s;
 const gapS = (props) => props.theme.gap.s;
-const gapL = (props) => props.theme.gap.l;
+const gapM = (props) => props.theme.gap.m;
 const gapXl = (props) => props.theme.gap.xl;
+const fontSerif = (props) => props.theme.font.serif;
 const fontDeco = (props) => props.theme.font.deco;
 
-const Wrap = styled.div`
-  margin: calc(-2px + -${gapXl} + -35px + -2px) auto ${gapL}; /* border + gapXL + logo + border */
-  max-width: calc(${container});
+const Wrap = styled.section`
+  margin: calc(-2px + -${gapXl} + -35px + -2px) auto calc(${gapXl} * 2); /* border + gapXL + logo + border */
+  max-width: ${container};
 `;
 const BoxWrap = styled.div`
   background: #fff;
   border: 2px solid #000;
   padding: ${gapXl};
   margin: 0 ${gapS};
+  @media (max-width: ${mediaS}) {
+    padding: ${gapM};
+  }
 `;
 const Logo = styled.div`
   border-block-end: 2px solid #000;
@@ -35,14 +39,22 @@ const Logo = styled.div`
     margin-inline-end: 5px;
     width: 25px;
   }
+  @media (max-width: ${mediaS}) {
+    margin-block-end: ${gapM};
+  }
 `;
 const Lead = styled.p`
-  font-size: 2.5rem;
-  font-weight: bold;
+  font: bold 3rem ${fontSerif};
   margin-block-end: ${gapS};
+  @media (max-width: ${mediaS}) {
+    font-size: 2.5rem;
+  }
 `;
 const Description = styled.p`
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  @media (max-width: ${mediaS}) {
+    font-size: 1.2rem;
+  }
 `;
 
 const Box = () => (
