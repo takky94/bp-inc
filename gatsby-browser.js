@@ -18,7 +18,7 @@ const animationBox = () => {
   const doWhenIntersect = (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('shown');
+        entry.target.classList.add('work__box--shown');
       }
     });
   };

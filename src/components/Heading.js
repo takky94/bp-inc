@@ -6,7 +6,7 @@ const gapL = (props) => props.theme.gap.l;
 const container = (props) => props.theme.container.header;
 const fontDeco = (props) => props.theme.font.deco;
 
-const Wrap = styled.section`
+const Wrap = styled.div`
   overflow: hidden;
   width: 100%;
 `;

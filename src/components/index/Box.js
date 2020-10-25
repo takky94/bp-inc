@@ -9,11 +9,12 @@ const mediaS = (props) => props.theme.media.s;
 const gapS = (props) => props.theme.gap.s;
 const gapM = (props) => props.theme.gap.m;
 const gapXl = (props) => props.theme.gap.xl;
+const gapXxl = (props) => props.theme.gap.xxl;
 const fontSerif = (props) => props.theme.font.serif;
 const fontDeco = (props) => props.theme.font.deco;
 
 const Wrap = styled.section`
-  margin: calc(-2px + -${gapXl} + -35px + -2px) auto calc(${gapXl} * 2); /* border + gapXL + logo + border */
+  margin: calc(-2px + -${gapXl} + -35px + -2px) auto ${gapXxl}; /* border + gapXL + logo + border */
   max-width: ${container};
 `;
 const BoxWrap = styled.div`

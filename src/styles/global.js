@@ -16,6 +16,9 @@ a{
   color: #3366ff;
   text-decoration: none;
 }
+img{
+  max-width: 100%;
+}
 @media(max-width: 479px){
   .sp__none{
     display: none !important;

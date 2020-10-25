@@ -29,6 +29,7 @@ const MenuWrap = styled.div`
   position: fixed;
   top: 0;
   transition: opacity 1s;
+  visibility: hidden;
   width: 100vw;
   z-index: ${higher};
   ul {
@@ -48,6 +49,7 @@ const MenuWrap = styled.div`
   &.show {
     animation: ${fadeDown} 0.8s both;
     opacity: 1;
+    visibility: visible;
     ul {
       li {
         animation: ${fadeIn} 0.5s both;
