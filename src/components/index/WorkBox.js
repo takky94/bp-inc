@@ -9,7 +9,7 @@ import fadeOutRight from '../../styles/animations/fadeOutRight';
 
 const mediaS = (props) => props.theme.media.s;
 const gapM = (props) => props.theme.gap.m;
-const container = (props) => props.theme.container.header;
+const container = (props) => props.theme.container.main;
 const red = (props) => props.theme.color.red;
 const redOp = (props) => props.theme.color.redOp;
 const purple = (props) => props.theme.color.purple;
@@ -57,6 +57,9 @@ const Wrap = styled.div`
       padding: 0 20px;
       &.right {
         text-align: right;
+        @media (max-width: ${mediaS}) {
+          text-align: left;
+        }
       }
     }
     &--icon {

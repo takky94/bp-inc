@@ -16,10 +16,12 @@ const Container = styled.div`
 `;
 const H = styled.h2`
   font: 4.5rem ${fontDeco};
+  line-height: 5rem;
   padding: 0 20px;
   position: relative;
   @media (max-width: ${mediaS}) {
     font-size: 3rem;
+    line-height: 3.5rem;
   }
   &::after {
     background: #111;
