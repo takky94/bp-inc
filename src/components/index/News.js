@@ -4,39 +4,52 @@ import styled from 'styled-components';
 import Heading from '../Heading';
 
 const mediaS = (props) => props.theme.media.s;
-const gapM = (props) => props.theme.gap.m;
+const gapXs = (props) => props.theme.gap.xs;
+const gapL = (props) => props.theme.gap.l;
+const gapXl = (props) => props.theme.gap.xl;
 const container = (props) => props.theme.container.main;
 const red = (props) => props.theme.color.red;
-const fontDeco = (props) => props.theme.font.deco;
 
 const Wrap = styled.section`
   position: relative;
   .news {
-    margin: 0 auto ${gapM};
-    max-width: ${container};
-    padding: 0 20px;
-    .news__line {
-      display: grid;
-      font-size: 1.4rem;
-      gap: 60px;
-      grid-template-columns: 100px 1fr;
-      margin-block-end: ${gapM};
-      position: relative;
-      &--date,
-      &--text {
-        padding: 3px 0;
-      }
-      &--date {
-      }
-      &--note {
-        background: ${red};
-        border-radius: 4px;
-        color: #fff;
-        font-size: 1.2rem;
-        font-weight: bold;
-        left: calc(100px + 5px); /* 日付とテキストの間 */
-        padding: 3px 5px;
-        position: absolute;
+    display: grid;
+    &__wrap {
+      display: inline-block;
+      height: 100px;
+      list-style: none;
+      margin: 0 auto ${gapL};
+      max-width: ${container};
+      overflow-y: scroll;
+      padding: 20px;
+      width: 100%;
+      .news__line {
+        font-size: 1.4rem;
+        margin-block-end: ${gapXs};
+        position: relative;
+        &--date,
+        &--note,
+        &--text {
+          display: inline;
+          margin-inline-end: ${gapXs};
+          padding: 3px 0;
+        }
+        &--date {
+          color: #666;
+          margin-inline-end: ${gapXl};
+          @media (max-width: ${mediaS}) {
+            margin-inline-end: ${gapXs};
+          }
+        }
+        &--note {
+          background: ${red};
+          border-radius: 3px;
+          color: #fff;
+          display: inline-block;
+          font-size: 1.2rem;
+          font-weight: bold;
+          padding: 3px 5px;
+        }
       }
     }
   }
@@ -76,17 +89,19 @@ const News = () => {
   return (
     <Wrap>
       <Heading position="left" text="News" />
-      <ul className="news">
-        {news.map((n) => (
-          <li key={n.date} className="news__line">
-            <time dateTime={format(n.date)} className="news__line--date">
-              {format(n.date)}
-            </time>
-            {today - n.date <= 7 && <span className="news__line--note">NEW</span>}
-            <p className="news__line--text">{n.text}</p>
-          </li>
-        ))}
-      </ul>
+      <div className="news">
+        <ul className="news__wrap">
+          {news.map((n) => (
+            <li key={n.date} className="news__line">
+              <time dateTime={format(n.date)} className="news__line--date">
+                {format(n.date)}
+              </time>
+              {today - n.date <= 7 && <span className="news__line--note">NEW</span>}
+              <p className="news__line--text">{n.text}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
       <Bg />
     </Wrap>
   );
