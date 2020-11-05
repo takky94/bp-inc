@@ -37,7 +37,7 @@ const H = styled.h2`
     &::after {
       left: -70%;
       @media (max-width: ${mediaS}) {
-        left: -65%;
+        left: -55%;
       }
     }
   }
@@ -46,7 +46,7 @@ const H = styled.h2`
     &::after {
       right: -70%;
       @media (max-width: ${mediaS}) {
-        right: -65%;
+        right: -55%;
       }
     }
   }

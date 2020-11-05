@@ -6,6 +6,7 @@ import SEO from '../components/SEO';
 import Box from '../components/index/Box';
 import Works from '../components/index/Works';
 import News from '../components/index/News';
+import AboutUs from '../components/index/AboutUs';
 
 const IndexPage = (props) => (
   <Layout location={props.location}>
@@ -13,8 +14,7 @@ const IndexPage = (props) => (
     <Box />
     <Works />
     <News />
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <AboutUs />
   </Layout>
 );
 

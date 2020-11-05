@@ -7,10 +7,12 @@ const mediaS = (props) => props.theme.media.s;
 const gapXs = (props) => props.theme.gap.xs;
 const gapL = (props) => props.theme.gap.l;
 const gapXl = (props) => props.theme.gap.xl;
+const gapXxl = (props) => props.theme.gap.xxl;
 const container = (props) => props.theme.container.main;
 const red = (props) => props.theme.color.red;
 
 const Wrap = styled.section`
+  margin-block-end: ${gapXxl};
   position: relative;
   .news {
     display: grid;

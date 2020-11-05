@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { ThemeProvider } from 'styled-components';
 
 import Header from './Header';
+import Footer from './Footer';
 
 import theme from '../styles/theme';
 import GlobalStyle from '../styles/global';
@@ -23,15 +24,7 @@ const Layout = ({ children, location }) => {
       <GlobalStyle />
       <Header siteTitle={data.site.siteMetadata.title} location={location} />
       <main>{children}</main>
-      <footer
-        style={{
-          marginTop: `2rem`,
-        }}
-      >
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+      <Footer />
     </ThemeProvider>
   );
 };
