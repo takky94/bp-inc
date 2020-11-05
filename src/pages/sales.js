@@ -1,19 +1,13 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+import WorkBox from '../components/index/WorkBox';
 import SEO from '../components/SEO';
-import Box from '../components/index/Box';
-import Works from '../components/index/Works';
-import News from '../components/index/News';
-import AboutUs from '../components/index/AboutUs';
 
 const IndexPage = (props) => (
   <Layout location={props.location}>
     <SEO location={props.location} />
-    <Box />
-    <Works />
-    <News />
-    <AboutUs />
+    <WorkBox title="Sales consulting." subTitle="営業コンサルティング" color="red" position="left" />
   </Layout>
 );
 

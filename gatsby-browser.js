@@ -4,7 +4,6 @@ exports.onClientEntry = () => {
 };
 
 exports.onRouteUpdate = ({ location }) => {
-  if (location.pathname !== '/') return '';
   animationBox();
 };
 

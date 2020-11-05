@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 import spread60 from '../../styles/animations/spread60';
@@ -153,7 +154,12 @@ const WorkBox = ({ title, subTitle, color, position, description, link }) => (
       <small>{subTitle}</small>
       <h3>{title}</h3>
     </div>
-    <p className={`work__box--description ${position}`}>{description}</p>
+    {description && (
+      <p className={`work__box--description ${position}`}>
+        {description}
+        <Link>MORE</Link>
+      </p>
+    )}
     <img className={`work__box--icon ${position}`} src={`/assets/${subTitle}.png`} />
     <div className={`work__box--horizon ${color} ${position}`} />
     <div className={`work__box--background ${color} ${position}`} />
