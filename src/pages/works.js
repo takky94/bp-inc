@@ -107,6 +107,7 @@ const Description = styled.div`
     }
     &.flow__scroll {
       display: flex;
+      overflow: hidden;
       overflow-x: scroll;
       li {
         min-width: calc((${container} - ${gapS} - ${gapS}) / 5);
@@ -199,7 +200,7 @@ const WorksPage = (props) => (
     <SEO location={props.location} />
     <Wrap>
       <Heading text="OUR WORKS" position="right" />
-      <WorkBox title="Sales consulting." subTitle="営業コンサルティング" color="red" />
+      <WorkBox title="Sales Consulting." subTitle="営業コンサルティング" color="red" />
       <Description>
         <h3 className="red">放送受信料の契約/収納業務</h3>
         <p>日本放送協会（NHK）のパートナー企業として、放送受信料の契約および収納業務を行っています。</p>
@@ -315,7 +316,7 @@ const WorksPage = (props) => (
           </li>
         </ol>
       </Description>
-      <WorkBox title="Business consulting." subTitle="起業／副業コンサルティング" color="purple" />
+      <WorkBox title="Business Consulting." subTitle="起業／副業コンサルティング" color="purple" />
       <Description>
         <h3 className="purple">ビジネスのお手伝い</h3>
         <p>会社設立・税務・労務・人材育成等各種相談、セミナー企画・運営等、格安でお手伝いします。</p>

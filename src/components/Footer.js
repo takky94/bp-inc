@@ -6,11 +6,13 @@ import Logo from './Logo';
 import menus from './menus/menus';
 
 const mediaS = (props) => props.theme.media.s;
+const yellow = (props) => props.theme.color.yellow;
 const gapXs = (props) => props.theme.gap.xs;
 const gapS = (props) => props.theme.gap.s;
 const gapM = (props) => props.theme.gap.m;
 const container = (props) => props.theme.container.footer;
 const fontDeco = (props) => props.theme.font.deco;
+const highest = (props) => props.theme.zIndex.highest;
 
 const Wrap = styled.footer`
   color: #fff;
@@ -81,31 +83,63 @@ const CopyRight = styled.div`
   text-align: center;
 `;
 
-const Footer = () => (
-  <Wrap>
-    <MenuWrap>
-      <Container>
-        <Col>
-          <div className="col__item">
-            <h3>MENUS</h3>
-            <ul>
-              {menus.map((m) => (
-                <li key={m.title}>
-                  <Link to={m.path}>{m.title}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="col__item">
-            <Logo />
-          </div>
-        </Col>
-      </Container>
-    </MenuWrap>
-    <CopyRight>
-      <Container>COPYRIGHT {new Date().getFullYear()} BP-INC.</Container>
-    </CopyRight>
-  </Wrap>
-);
+const Button = styled.button`
+  appearance: none;
+  background: ${yellow};
+  border: none;
+  border-radius: 4px;
+  bottom: 50px;
+  cursor: pointer;
+  height: 40px;
+  opacity: 0.5;
+  padding: 10px;
+  position: fixed;
+  right: 30px;
+  transform: rotate(-45deg);
+  width: 40px;
+  z-index: ${highest};
+  .arrow {
+    border-block-start: 3px solid #fff;
+    border-inline-end: 3px solid #fff;
+    height: 20px;
+    width: 20px;
+  }
+`;
+
+const Footer = () => {
+  const goToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  return (
+    <Wrap>
+      <MenuWrap>
+        <Container>
+          <Col>
+            <div className="col__item">
+              <h3>MENUS</h3>
+              <ul>
+                {menus.map((m) => (
+                  <li key={m.title}>
+                    <Link to={m.path}>{m.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="col__item">
+              <Logo />
+            </div>
+          </Col>
+        </Container>
+      </MenuWrap>
+      <CopyRight>
+        <Container>COPYRIGHT {new Date().getFullYear()} BP-INC.</Container>
+      </CopyRight>
+      <Button onClick={goToTop}>
+        <div className="arrow" />
+      </Button>
+    </Wrap>
+  );
+};
 
 export default Footer;

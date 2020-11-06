@@ -62,6 +62,17 @@ const Wrap = styled.div`
           text-align: left;
         }
       }
+      a {
+        color: #111;
+        font: bold 1.6rem ${fontDeco};
+        margin-inline-start: 10px;
+        &::before {
+          content: '▶︎▶︎';
+          display: inline-block;
+          font-size: 1.4rem;
+          margin-inline-end: 5px;
+        }
+      }
     }
     &--icon {
       height: 140px;
@@ -157,7 +168,7 @@ const WorkBox = ({ title, subTitle, color, position = 'left', description, link 
     {description && (
       <p className={`work__box--description ${position}`}>
         {description}
-        <Link>MORE</Link>
+        <Link to={link}>MORE</Link>
       </p>
     )}
     <img className={`work__box--icon ${position}`} src={`/assets/${subTitle}.png`} />
