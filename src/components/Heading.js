@@ -52,7 +52,7 @@ const H = styled.h2`
   }
 `;
 
-const Heading = ({ position, text }) => (
+const Heading = ({ position = 'left', text }) => (
   <Wrap>
     <Container>
       <H className={position}>{text}</H>

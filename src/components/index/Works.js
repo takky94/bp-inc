@@ -13,15 +13,14 @@ const Wrap = styled.section`
 const Works = () => {
   const workBoxes = [
     {
-      title: 'Sales consulting.',
+      title: 'Sales Consulting.',
       subTitle: '営業コンサルティング',
       color: 'red',
-      position: 'left',
-      link: '',
+      link: '/works/#',
       description: '新規顧客開拓・人脈紹介・営業組織構築提案・各種商材提供等、格安でお手伝いします。',
     },
     {
-      title: 'Business consulting.',
+      title: 'Business Consulting.',
       subTitle: '起業／副業コンサルティング',
       color: 'purple',
       position: 'right',
@@ -32,7 +31,6 @@ const Works = () => {
       title: 'Office Work.',
       subTitle: '事務／業務運営代行',
       color: 'blue',
-      position: 'left',
       link: '',
       description: '経理事務・労務管理事務・ホームページ管理・各種WEBサービス管理等、格安でお手伝いします。',
     },

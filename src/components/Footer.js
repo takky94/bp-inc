@@ -1,8 +1,11 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 import Logo from './Logo';
+import menus from './menus/menus';
 
+const mediaS = (props) => props.theme.media.s;
 const gapXs = (props) => props.theme.gap.xs;
 const gapS = (props) => props.theme.gap.s;
 const gapM = (props) => props.theme.gap.m;
@@ -28,8 +31,11 @@ const Container = styled.div`
 const Col = styled.div`
   display: flex;
   flex-wrap: wrap;
-  div {
+  .col__item {
     width: calc(50% - ${gapS});
+    @media (max-width: ${mediaS}) {
+      width: 100%;
+    }
     &:first-of-type {
       margin-inline-end: ${gapS};
       text-align: left;
@@ -50,10 +56,14 @@ const Col = styled.div`
         }
       }
       ul {
-        font-size: 1.4rem;
         list-style: none;
         li {
           margin-block-end: ${gapXs};
+          a {
+            color: #fff;
+            font: 2rem ${fontDeco};
+            text-decoration: none;
+          }
         }
       }
     }
@@ -63,8 +73,6 @@ const Col = styled.div`
     }
   }
 `;
-
-const Menu = styled;
 
 const CopyRight = styled.div`
   background: #111;
@@ -78,16 +86,17 @@ const Footer = () => (
     <MenuWrap>
       <Container>
         <Col>
-          <div>
+          <div className="col__item">
             <h3>MENUS</h3>
             <ul>
-              <li>MENU1</li>
-              <li>MENU2</li>
-              <li>MENU3</li>
-              <li>MENU4</li>
+              {menus.map((m) => (
+                <li key={m.title}>
+                  <Link to={m.path}>{m.title}</Link>
+                </li>
+              ))}
             </ul>
           </div>
-          <div>
+          <div className="col__item">
             <Logo />
           </div>
         </Col>

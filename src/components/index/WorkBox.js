@@ -148,8 +148,8 @@ const Wrap = styled.div`
   }
 `;
 
-const WorkBox = ({ title, subTitle, color, position, description, link }) => (
-  <Wrap className={`work__box`}>
+const WorkBox = ({ title, subTitle, color, position = 'left', description, link }) => (
+  <Wrap id={`workBox${title.replace(/\s+/g, '').replace('.', '')}`} className={`work__box`}>
     <div className={`work__box--title ${position}`}>
       <small>{subTitle}</small>
       <h3>{title}</h3>
