@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const red = (props) => props.theme.color.red;
 const purple = (props) => props.theme.color.purple;
 const blue = (props) => props.theme.color.blue;
+const green = (props) => props.theme.color.green;
 const gapXs = (props) => props.theme.gap.xs;
 const gapS = (props) => props.theme.gap.s;
 const gapL = (props) => props.theme.gap.l;
@@ -19,6 +20,9 @@ const Wrap = styled.h3`
   }
   &.blue {
     color: ${blue};
+  }
+  &.green {
+    color: ${green};
   }
   &::before {
     content: '■';

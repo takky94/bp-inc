@@ -5,19 +5,27 @@ const mediaM = (props) => props.theme.media.m;
 const gapXs = (props) => props.theme.gap.xs;
 const gapS = (props) => props.theme.gap.s;
 const gapM = (props) => props.theme.gap.m;
+const greenOp = (props) => props.theme.color.greenOp;
 const container = (props) => props.theme.container.main;
 
-const Wrap = styled.table`
-  font-size: 1.6rem;
-  margin: 0 auto;
+const Wrap = styled.div`
+  margin: 0 auto ${gapS};
   max-width: ${container};
   padding: 0 ${gapS};
   width: 100%;
+`;
+
+const T = styled.table`
+  font-size: 1.6rem;
   tr {
     display: grid;
     gap: ${gapXs};
     grid-template-columns: 150px 1fr;
     margin-block-end: ${gapM};
+    th,
+    td {
+      padding: 1em;
+    }
     th {
       text-align: left;
     }
@@ -25,6 +33,21 @@ const Wrap = styled.table`
       address {
         font-style: initial;
       }
+    }
+  }
+  &.border {
+    border: 1px solid #111;
+    border-collapse: collapse;
+    tr {
+      gap: 0;
+      margin-block-end: 0;
+    }
+    th,
+    td {
+      border: 1px solid #111;
+    }
+    th {
+      background: ${greenOp};
     }
   }
   @media (max-width: ${mediaM}) {
@@ -36,9 +59,11 @@ const Wrap = styled.table`
   }
 `;
 
-const Table = ({ children }) => (
+const Table = ({ children, border = false }) => (
   <Wrap>
-    <tbody>{children}</tbody>
+    <T className={border ? 'border' : ''}>
+      <tbody>{children}</tbody>
+    </T>
   </Wrap>
 );
 

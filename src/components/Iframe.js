@@ -16,23 +16,20 @@ const Wrap = styled.div`
   }
 `;
 
-const Iframe = ({ src }) => {
-  console.log(src);
-  return (
-    <Wrap>
-      <iframe
-        src={src}
-        width="600"
-        height="450"
-        frameBorder="0"
-        style={{ border: 0 }}
-        allowFullScreen=""
-        aria-hidden="false"
-        tabIndex="0"
-        loading="lazy"
-      />
-    </Wrap>
-  );
-};
+const Iframe = ({ src }) => (
+  <Wrap>
+    <iframe
+      src={src}
+      width="600"
+      height="450"
+      frameBorder="0"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      aria-hidden="false"
+      tabIndex="0"
+      loading="lazy"
+    />
+  </Wrap>
+);
 
 export default Iframe;
