@@ -4,16 +4,17 @@ import styled from 'styled-components';
 
 import menus from './menus';
 
-const gapXs = (props) => props.theme.gap.xs;
+const gapS = (props) => props.theme.gap.s;
 
 const Wrap = styled.ul`
   align-items: center;
-  display: grid;
-  gap: ${gapXs};
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
   height: 100%;
   list-style: none;
   li {
+    &:not(:last-child) {
+      margin-inline-end: ${gapS};
+    }
     a {
       color: #fff;
       &::after {

@@ -35,19 +35,13 @@ const H = styled.h2`
   }
   &.left {
     &::after {
-      left: -70%;
-      @media (max-width: ${mediaS}) {
-        left: -55%;
-      }
+      left: -40%;
     }
   }
   &.right {
     text-align: right;
     &::after {
-      right: -70%;
-      @media (max-width: ${mediaS}) {
-        right: -55%;
-      }
+      right: -40%;
     }
   }
 `;

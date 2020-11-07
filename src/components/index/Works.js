@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import WorkBox from './WorkBox';
-import Heading from '../Heading';
+import Heading2 from '../Heading2';
 
 const gapXxl = (props) => props.theme.gap.xxl;
 
@@ -37,7 +37,7 @@ const Works = () => {
   ];
   return (
     <Wrap>
-      <Heading position="right" text="WORKS" />
+      <Heading2 position="right" text="WORKS" />
       {workBoxes.map((box) => (
         <WorkBox key={box.title} {...box} />
       ))}

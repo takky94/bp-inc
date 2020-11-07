@@ -12,7 +12,7 @@ const gapS = (props) => props.theme.gap.s;
 const gapM = (props) => props.theme.gap.m;
 const container = (props) => props.theme.container.footer;
 const fontDeco = (props) => props.theme.font.deco;
-const highest = (props) => props.theme.zIndex.highest;
+const higher = (props) => props.theme.zIndex.higher;
 
 const Wrap = styled.footer`
   color: #fff;
@@ -63,8 +63,19 @@ const Col = styled.div`
           margin-block-end: ${gapXs};
           a {
             color: #fff;
+            display: inline-block;
             font: 2rem ${fontDeco};
             text-decoration: none;
+            &::after {
+              border-block-end: 2px solid #fff;
+              content: '';
+              display: block;
+              transition: all 0.3s;
+              width: 0;
+            }
+            &:hover::after {
+              width: 100%;
+            }
           }
         }
       }
@@ -97,7 +108,7 @@ const Button = styled.button`
   right: 30px;
   transform: rotate(-45deg);
   width: 40px;
-  z-index: ${highest};
+  z-index: ${higher};
   .arrow {
     border-block-start: 3px solid #fff;
     border-inline-end: 3px solid #fff;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-import Heading from '../Heading';
+import Heading2 from '../Heading2';
 
 const mediaS = (props) => props.theme.media.s;
 const gapXs = (props) => props.theme.gap.xs;
@@ -9,7 +9,7 @@ const gapL = (props) => props.theme.gap.l;
 const gapXl = (props) => props.theme.gap.xl;
 const gapXxl = (props) => props.theme.gap.xxl;
 const container = (props) => props.theme.container.main;
-const red = (props) => props.theme.color.red;
+const red = (props) => props.theme.color.green;
 
 const Wrap = styled.section`
   margin-block-end: ${gapXxl};
@@ -87,7 +87,7 @@ const News = () => {
 
   return (
     <Wrap>
-      <Heading position="left" text="News" />
+      <Heading2 position="left" text="News" />
       <div className="news">
         <ul className="news__wrap">
           {news.map((n) => (

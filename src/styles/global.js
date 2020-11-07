@@ -20,6 +20,9 @@ a{
 img{
   max-width: 100%;
 }
+p{
+  font-size: 1.4rem;
+}
 @media(max-width: 479px){
   .sp__none{
     display: none !important;

@@ -14,7 +14,6 @@ import fadeIn from '../../styles/animations/fadeIn';
 
 const gapXs = (props) => props.theme.gap.xs;
 const gapXl = (props) => props.theme.gap.xl;
-const higher = (props) => props.theme.zIndex.higher;
 const highest = (props) => props.theme.zIndex.highest;
 
 const Wrap = styled.div`
@@ -31,7 +30,7 @@ const MenuWrap = styled.div`
   transition: opacity 1s;
   visibility: hidden;
   width: 100vw;
-  z-index: ${higher};
+  z-index: ${highest};
   ul {
     background: linear-gradient(-45deg, #222, #555);
     list-style: none;

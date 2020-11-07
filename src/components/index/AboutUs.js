@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Heading from '../Heading';
+import Heading2 from '../Heading2';
 import Iframe from '../Iframe';
 import Table from '../Table';
 
@@ -29,7 +29,7 @@ const Col = styled.div`
 
 const AboutUs = () => (
   <Wrap>
-    <Heading position="right" text="ABOUT US" />
+    <Heading2 position="right" text="ABOUT US" />
     <Container>
       <Col>
         <Table>
