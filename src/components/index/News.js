@@ -71,10 +71,7 @@ const Bg = styled.div`
 `;
 
 const News = () => {
-  const news = [
-    { date: '20201025', text: 'うんこ' },
-    { date: '20201011', text: 'うんこ' },
-  ];
+  const news = [{ date: '20201107', text: '公式HPを公開しました' }];
   const [today, setToday] = useState('');
   useEffect(() => {
     const date = new Date();
