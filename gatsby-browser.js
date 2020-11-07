@@ -1,8 +1,3 @@
-exports.onClientEntry = () => {
-  console.log("We've started!");
-  // ここにローディング処理
-};
-
 exports.onRouteUpdate = ({ location }) => {
   animationBox();
 };

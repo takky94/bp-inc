@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
 }
 html{
-  font-size: 62.5%;
+  font: 62.5% 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
   scroll-behavior: smooth;
 }
 h1, h2, h3, h4, h5, p{
