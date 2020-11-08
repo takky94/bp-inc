@@ -49,16 +49,24 @@ const AboutUs = () => (
           </tr>
           <tr>
             <th>代表取締役</th>
-            <td>中鉢　康子</td>
+            <td>宮本　正樹</td>
           </tr>
           <tr>
             <th>資本金</th>
             <td>900万</td>
           </tr>
           <tr>
+            <th>電話番号</th>
+            <td>03-5985-5520</td>
+          </tr>
+          <tr>
+            <th>FAX番号</th>
+            <td>03-5985-5521</td>
+          </tr>
+          {/* <tr>
             <th>取引先</th>
             <td>みずほ銀行</td>
-          </tr>
+          </tr> */}
           <tr>
             <th>顧問</th>
             <td>
