@@ -73,7 +73,7 @@ const Description = styled.div`
       overflow: hidden;
       overflow-x: scroll;
       li {
-        min-width: calc((${container} - ${gapS} - ${gapS}) / 5);
+        min-width: calc((${container} - ${gapS} - ${gapS}) / 4);
         .flow__scroll--step {
           background: ${red};
           border-bottom-right-radius: 30px;
@@ -93,9 +93,9 @@ const Description = styled.div`
             content: '';
             display: inline-block;
             height: 40px;
-            left: 65px;
+            left: 93px;
             position: absolute;
-            top: 45px;
+            top: 43px;
             width: 90px;
             z-index: -1;
           }
@@ -124,7 +124,7 @@ const Description = styled.div`
     border-right: 100px solid transparent;
     border-top: 50px solid ${blueOp};
     height: 0;
-    margin: -50px auto ${gapS};
+    margin: ${gapS} auto;
     width: 0;
   }
   .col {
@@ -218,31 +218,24 @@ const WorksPage = (props) => {
             <small>※自動車、バイク持込みOK。自転車も貸与します。その他お気軽にご相談ください。</small>
           </p>
           <Heading3 text="ポスティング/広告/サンプリング業務" className="red" />
-          <p>
-            ハイクオリティで『反響』の高い、そして何より<strong>費用対効果の高いポスティングサービス</strong>
-            をご提供しています。
-          </p>
+          <p>ハイクオリティで『反響』の高い、そして何より費用対効果の高いポスティングサービス をご提供しています。</p>
           <ul>
             <li>
-              <strong>完全自社配布・GPS完備・翌日日報配信システムのポスティング</strong>
+              完全自社配布・GPS完備・翌日日報配信システムのポスティング
               により、全国のたくさんのクライアント様へたくさんの『反響』をお届けしております。
             </li>
-            <li>
-              <strong>下請けや丸投げなどの外部発注は一切いたしません。</strong>
-            </li>
+            <li>下請けや丸投げなどの外部発注は一切いたしません。</li>
             <li>すべてを自社スタッフにて丁寧にポスティングいたします。</li>
             <li>町丁単位での配布地域の指定が可能なため、細やかな商圏に合わせたピンポイント配布が可能です。</li>
             <li>
               戸建や集合住宅・事業所の限定配布も可能なので、
-              <strong>チラシを無駄にすることなく必要な地域に必要なだけポスティングを行いコストの削減が可能</strong>
-              です。
+              チラシを無駄にすることなく必要な地域に必要なだけポスティングを行いコストの削減が可能 です。
             </li>
             <li>
               新聞の購読率の極めて低い若年層にも広告を打つことが可能なうえ、町丁単位の指定が可能なので商圏に合ったユーザーを限定し、イベントやキャンペーンなどの告知をすることが可能です。
             </li>
             <li>
-              また大量に折り込まれる新聞折込と異なり、
-              <strong>ユーザーが必ず手に取るため印象度や認知度が高まる効果</strong>があります。
+              また大量に折り込まれる新聞折込と異なり、 ユーザーが必ず手に取るため印象度や認知度が高まる効果があります。
             </li>
           </ul>
           <Heading4 text="ポスティングの流れ" className="red" />
@@ -275,13 +268,13 @@ const WorksPage = (props) => {
                 <figcaption>チラシ配布実行</figcaption>
               </figure>
             </li>
-            <li>
+            {/* <li>
               <span className="flow__scroll--step">STEP5</span>
               <figure>
                 <img src="/assets/flow9.svg" />
                 <figcaption>アフターサポート</figcaption>
               </figure>
-            </li>
+            </li> */}
           </ol>
         </Description>
         <WorkBox title="Business Consulting." subTitle="起業／副業コンサルティング" color="purple" />
