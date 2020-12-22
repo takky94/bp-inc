@@ -59,13 +59,23 @@ const Description = styled.div`
         font-size: 1.2rem;
         font-weight: normal;
       }
+      &.black {
+        color: inherit;
+      }
     }
-    &.flow {
+    &.flow,
+    &.flow2 {
       display: grid;
       gap: ${gapS};
       grid-template-columns: 1fr 1fr 1fr 1fr;
       @media (max-width: ${mediaM}) {
         grid-template-columns: 1fr 1fr;
+      }
+    }
+    &.flow2 {
+      grid-template-columns: 1fr 1fr 1fr;
+      @media (max-width: ${mediaM}) {
+        grid-template-columns: 1fr;
       }
     }
     &.flow__scroll {
@@ -106,6 +116,15 @@ const Description = styled.div`
             width: 80px;
           }
         }
+      }
+    }
+    &.boxes {
+      display: grid;
+      gap: ${gapS};
+      grid-template-columns: 1fr 1fr;
+      .box {
+        border: 1px solid #ccc;
+        border-radius: 3px;
       }
     }
   }
@@ -217,6 +236,40 @@ const WorksPage = (props) => {
           <p>
             <small>※自動車、バイク持込みOK。自転車も貸与します。その他お気軽にご相談ください。</small>
           </p>
+          <Heading3 text="新電力電気料金への見直し提案／切り替え業務" className="red" />
+          <p>
+            新電力のパートナー企業として、電気料金の見直し・切り替え業務を行っています。電気のアドバイザーが、今お支払いの電気代を無料診断させていただきます。
+          </p>
+          <Heading4 text="お申し込みは簡単3STEP" className="red" />
+          <ol className="flow2">
+            <li>
+              <figure>
+                <Image filename="flow1.png" />
+                <figcaption className="black">
+                  現在ご契約中の電力会社の 「電気ご使用量のお知らせ（検針票）」 または請求書をご用意ください。
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <Image filename="flow2.png" />
+                <figcaption className="black">インターネットまたはお申込書にて お申込みください。</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <Image filename="flow3.png" />
+                <figcaption className="black">お申込みから、2～6週間で まちエネの電気に切替わります。</figcaption>
+              </figure>
+            </li>
+          </ol>
+          <Heading4 text="４つの特長" className="red" />
+          <ol className="boxes">
+            <li className="box">TEST</li>
+            <li className="box">TEST</li>
+            <li className="box">TEST</li>
+            <li className="box">TEST</li>
+          </ol>
           <Heading3 text="ポスティング/広告/サンプリング業務" className="red" />
           <p>ハイクオリティで『反響』の高い、そして何より費用対効果の高いポスティングサービス をご提供しています。</p>
           <ul>
