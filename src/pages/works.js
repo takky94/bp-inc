@@ -117,6 +117,17 @@ const Description = styled.div`
           }
         }
       }
+      &2 {
+        li {
+          min-width: calc((${container} - ${gapS} - ${gapS}) / 3);
+          figure::after {
+            left: 140px;
+          }
+          figcaption {
+            text-align: left;
+          }
+        }
+      }
     }
     &.boxes {
       display: grid;
@@ -241,35 +252,74 @@ const WorksPage = (props) => {
             新電力のパートナー企業として、電気料金の見直し・切り替え業務を行っています。電気のアドバイザーが、今お支払いの電気代を無料診断させていただきます。
           </p>
           <Heading4 text="お申し込みは簡単3STEP" className="red" />
-          <ol className="flow2">
+          <ol className="flow__scroll flow__scroll2">
             <li>
+              <span className="flow__scroll--step">STEP1</span>
               <figure>
-                <Image filename="flow1.png" />
-                <figcaption className="black">
+                <img src="/assets/flow10.svg" />
+                <figcaption>
                   現在ご契約中の電力会社の 「電気ご使用量のお知らせ（検針票）」 または請求書をご用意ください。
                 </figcaption>
               </figure>
             </li>
             <li>
+              <span className="flow__scroll--step">STEP2</span>
               <figure>
-                <Image filename="flow2.png" />
-                <figcaption className="black">インターネットまたはお申込書にて お申込みください。</figcaption>
+                <img src="/assets/flow11.svg" />
+                <figcaption>インターネットまたはお申込書にて お申込みください。</figcaption>
               </figure>
             </li>
             <li>
+              <span className="flow__scroll--step">STEP3</span>
               <figure>
-                <Image filename="flow3.png" />
-                <figcaption className="black">お申込みから、2～6週間で まちエネの電気に切替わります。</figcaption>
+                <img src="/assets/flow12.svg" />
+                <figcaption>お申込みから、2～6週間で まちエネの電気に切替わります。</figcaption>
               </figure>
             </li>
           </ol>
           <Heading4 text="４つの特長" className="red" />
-          <ol className="boxes">
-            <li className="box">TEST</li>
-            <li className="box">TEST</li>
-            <li className="box">TEST</li>
-            <li className="box">TEST</li>
+          <ol className="flow">
+            <li>
+              <figure>
+                <Image filename="feature1.png" />
+                <figcaption>
+                  1. 電気料金が節約できる
+                  {/* <small>追加テキスト</small> */}
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <Image filename="feature2.png" />
+                <figcaption>
+                  2. ライフスタイルや好みに合った料金プランが選べる
+                  {/* <small>追加テキスト</small> */}
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <Image filename="feature3.png" />
+                <figcaption>
+                  3. 安心して電気を利用できる
+                  {/* <small>追加テキスト</small> */}
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <Image filename="feature4.png" />
+                <figcaption>
+                  4. 切替え手続きも無料でかんたん
+                  {/* <small>追加テキスト</small> */}
+                </figcaption>
+              </figure>
+            </li>
           </ol>
+          <br />
+          <Link to="/contact" className="button__cta">
+            お問い合わせはこちらから
+          </Link>
           <Heading3 text="ポスティング/広告/サンプリング業務" className="red" />
           <p>ハイクオリティで『反響』の高い、そして何より費用対効果の高いポスティングサービス をご提供しています。</p>
           <ul>
