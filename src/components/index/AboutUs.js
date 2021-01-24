@@ -41,9 +41,11 @@ const AboutUs = () => (
             <th>住所</th>
             <td>
               <address>
-                東京都豊島区池袋2丁目17ー8
+                171-0014
                 <br />
-                池袋西口ANNEX2階
+                東京都豊島区池袋2－13－4
+                <br />
+                天翔池袋西口ビル4階
               </address>
             </td>
           </tr>
@@ -63,10 +65,6 @@ const AboutUs = () => (
             <th>FAX番号</th>
             <td>03-5985-5521</td>
           </tr>
-          {/* <tr>
-            <th>取引先</th>
-            <td>みずほ銀行</td>
-          </tr> */}
           <tr>
             <th>顧問</th>
             <td>
@@ -79,14 +77,6 @@ const AboutUs = () => (
           </tr>
         </Table>
         <Iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.815180904257!2d139.7077117153831!3d35.730763634860956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d32b0a8d8c5%3A0x521ee7f666092148!2z5aSp57-U44Kq44OV44Kj44K55rGg6KKL6KW_5Y-jQU5ORVg!5e0!3m2!1sja!2sjp!4v1604550878286!5m2!1sja!2sjp" />
-        {/* <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.815180904257!2d139.7077117153831!3d35.730763634860956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d32b0a8d8c5%3A0x521ee7f666092148!2z5aSp57-U44Kq44OV44Kj44K55rGg6KKL6KW_5Y-jQU5ORVg!5e0!3m2!1sja!2sjp!4v1604550878286!5m2!1sja!2sjp"
-          width="600"
-          height="450"
-          frameborder="0"
-          style={{ border: 0 }}
-          allowfullscreen=""
-        ></iframe> */}
       </Col>
     </Container>
   </Wrap>

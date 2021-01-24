@@ -71,11 +71,14 @@ const Bg = styled.div`
 `;
 
 const News = () => {
-  const news = [{ date: '20201107', text: '公式HPを公開しました' }];
+  const news = [
+    { date: '20210124', text: '本社が移転しました' },
+    { date: '20201107', text: '公式HPを公開しました' },
+  ];
   const [today, setToday] = useState('');
   useEffect(() => {
     const date = new Date();
-    const todayStr = '' + date.getFullYear() + (date.getMonth() + 1) + date.getDate();
+    const todayStr = '' + date.getFullYear() + ('0' + (date.getMonth() + 1)).slice(-2) + date.getDate();
     setToday(todayStr);
   }, []);
   const format = (date) => {

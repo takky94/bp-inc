@@ -7,27 +7,24 @@ const blue = (props) => props.theme.color.blue;
 const green = (props) => props.theme.color.green;
 const gapXs = (props) => props.theme.gap.xs;
 const gapS = (props) => props.theme.gap.s;
-const gapL = (props) => props.theme.gap.l;
+const gapXl = (props) => props.theme.gap.xl;
 
 const Wrap = styled.h3`
-  font-size: 2.2rem;
-  margin: ${gapL} 0 ${gapS};
+  color: #fff;
+  font-size: 2.4rem;
+  margin: ${gapXl} 0 ${gapS};
+  padding: 0.5em 1em;
   &.red {
-    color: ${red};
+    background: ${red};
   }
   &.purple {
-    color: ${purple};
+    background: ${purple};
   }
   &.blue {
-    color: ${blue};
+    background: ${blue};
   }
   &.green {
-    color: ${green};
-  }
-  &::before {
-    content: '■';
-    display: inline-block;
-    margin-inline-end: ${gapXs};
+    background: ${green};
   }
 `;
 
