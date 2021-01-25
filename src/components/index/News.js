@@ -72,7 +72,7 @@ const Bg = styled.div`
 
 const News = () => {
   const news = [
-    { date: '20210124', text: '本社が移転しました' },
+    { date: '20210125', text: '本社が移転しました' },
     { date: '20201107', text: '公式HPを公開しました' },
   ];
   const [today, setToday] = useState('');
