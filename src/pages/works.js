@@ -273,7 +273,7 @@ const WorksPage = (props) => {
               <span className="flow__scroll--step">STEP3</span>
               <figure>
                 <img src="/assets/flow12.svg" />
-                <figcaption>お申込みから、2～6週間で まちエネの電気に切替わります。</figcaption>
+                <figcaption>お申込みから、2～6週間でお得な電気に切替わります。</figcaption>
               </figure>
             </li>
           </ol>
