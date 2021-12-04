@@ -75,6 +75,10 @@ const AboutUs = () => (
               アクト労務経営センター
             </td>
           </tr>
+          <tr>
+            <th>古物商許可証</th>
+            <td>第305502118232号取得</td>
+          </tr>
         </Table>
         <Iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.815180904257!2d139.7077117153831!3d35.730763634860956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d32b0a8d8c5%3A0x521ee7f666092148!2z5aSp57-U44Kq44OV44Kj44K55rGg6KKL6KW_5Y-jQU5ORVg!5e0!3m2!1sja!2sjp!4v1604550878286!5m2!1sja!2sjp" />
       </Col>

@@ -72,6 +72,7 @@ const Bg = styled.div`
 
 const News = () => {
   const news = [
+    { date: '20210618', text: '古物商許可証第305502118232号取得' },
     { date: '20210125', text: '本社が移転しました' },
     { date: '20201107', text: '公式HPを公開しました' },
   ];
