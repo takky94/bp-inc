@@ -11,6 +11,8 @@ import fadeOutRight from '../../styles/animations/fadeOutRight';
 const mediaS = (props) => props.theme.media.s;
 const gapM = (props) => props.theme.gap.m;
 const container = (props) => props.theme.container.main;
+const yellow = (props) => props.theme.color.yellow;
+const yellowOp = (props) => props.theme.color.yellowOp;
 const red = (props) => props.theme.color.red;
 const redOp = (props) => props.theme.color.redOp;
 const purple = (props) => props.theme.color.purple;
@@ -82,7 +84,7 @@ const Wrap = styled.div`
       width: 140px;
       z-index: 1;
       &.left {
-        right: 40%;
+        right: 5%;
         @media (max-width: ${mediaS}) {
           right: 20px;
         }
@@ -100,6 +102,9 @@ const Wrap = styled.div`
       position: absolute;
       top: calc(150px - 50px); /* title部分全体の高さ - paddingBottom分 */
       width: 0;
+      &.yellow {
+        background: ${yellow};
+      }
       &.red {
         background: ${red};
       }
@@ -110,7 +115,7 @@ const Wrap = styled.div`
         background: ${blue};
       }
       &.left {
-        right: 0;
+        left: 0;
       }
       &.right {
         left: 0;
@@ -123,6 +128,9 @@ const Wrap = styled.div`
       top: 0;
       width: 0;
       z-index: 0;
+      &.yellow {
+        background: ${yellowOp};
+      }
       &.red {
         background: ${redOp};
       }
@@ -143,10 +151,10 @@ const Wrap = styled.div`
   &.work__box--shown {
     /* 可視範囲入ったらアニメーション */
     .work__box--background {
-      animation: ${spread60} 1s both;
-      @media (max-width: ${mediaS}) {
-        animation: ${spread100} 1s both;
-      }
+      /* animation: ${spread60} 1s both; */
+      /* @media (max-width: ${mediaS}) { */
+      animation: ${spread100} 1s both;
+      /* } */
     }
     .work__box--horizon {
       &.left {

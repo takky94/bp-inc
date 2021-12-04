@@ -199,54 +199,6 @@ const WorksPage = (props) => {
         <Heading2 text="OUR WORKS" position="right" />
         <WorkBox title="Sales Consulting." subTitle="営業コンサルティング" color="red" />
         <Description>
-          <Heading3 text="放送受信料の契約/収納業務" className="red" />
-          <p>日本放送協会（NHK）のパートナー企業として、放送受信料の契約および収納業務を行っています。</p>
-          <p>
-            未経験でも大丈夫、決して難しい仕事ではありません。経験豊富な先輩スタッフが「ゆっくり・丁寧」に指導いたしますのでご安心ください。少しでもご興味がある方は、是非お気軽にお問い合わせ・ご応募ください。
-          </p>
-          <Heading4 text="お仕事イメージ（1日の流れ）/収納業務" className="red" />
-          <ul>
-            <li>競合他社は居ません！みなさんには担当地域をお渡しします。</li>
-            <li> スマホ感覚の専用端末使用！地図内蔵のかんたん操作です。</li>
-            <li>服装は基本自由！動きやすい格好が一番、スーツでなくとも構いません。</li>
-          </ul>
-          <p>以下はある1日における基本的な仕事の大まかな流れになりますのでご参考ください。</p>
-          <ol className="flow">
-            <li>
-              <figure>
-                <Image filename="flow1.png" />
-                <figcaption>10:00～12:00出社</figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <Image filename="flow2.png" />
-                <figcaption>軽～くミーティング</figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <Image filename="flow3.png" />
-                <figcaption>
-                  担当地域での活動
-                  <small>
-                    コツコツと実働7時間以上
-                    <br />
-                    休憩60分（30分×2回でもOK）
-                  </small>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <Image filename="flow4.png" />
-                <figcaption>19:00～21:00帰社</figcaption>
-              </figure>
-            </li>
-          </ol>
-          <p>
-            <small>※自動車、バイク持込みOK。自転車も貸与します。その他お気軽にご相談ください。</small>
-          </p>
           <Heading3 text="新電力電気料金への見直し提案／切り替え業務" className="red" />
           <p>
             新電力のパートナー企業として、電気料金の見直し・切り替え業務を行っています。電気のアドバイザーが、今お支払いの電気代を無料診断させていただきます。
