@@ -30,7 +30,7 @@ const Works = () => {
   const workBoxes = [
     {
       title: 'EC Consulting.',
-      subTitle: 'ネットショップ構築/運営',
+      subTitle: 'ネットショップ構築／運営',
       color: 'yellow',
       link: '/works#workBoxEcConsulting',
       description: 'ショップ構築・運営代行・仕入れ方法等、格安でお手伝いします。',

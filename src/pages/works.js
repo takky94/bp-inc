@@ -197,10 +197,11 @@ const WorksPage = (props) => {
       <SEO location={props.location} pageTitle={workTitle} pageDescription={worksDescription} />
       <Wrap>
         <Heading2 text="OUR WORKS" position="right" />
-        <WorkBox title="EC Consulting." subTitle="ネットショップ構築/運営" color="yellow" />
+        <WorkBox title="EC Consulting." subTitle="ネットショップ構築／運営" color="yellow" />
         <Description>
           <p>EC導入・運営のお手伝い</p>
           <p>ショップ構築・運営代行・仕入れ方法等、格安でお手伝いします。 </p>
+          <Image filename="feature5.png" />
         </Description>
         <WorkBox title="Sales Consulting." subTitle="営業コンサルティング" color="red" />
         <Description>
